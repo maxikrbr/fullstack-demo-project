@@ -17,9 +17,9 @@ export class ContactPrismaRepository implements ContactRepository {
     const newContact = await this.prisma.contact.create({
       data: {
         id: contact.id,
-        name: contact.first_name,
-        email: contact.main_email,
-        phone: contact.main_phone,
+        name: contact.name,
+        email: contact.email,
+        phone: contact.phone,
         user_id: user_id
       }
     });

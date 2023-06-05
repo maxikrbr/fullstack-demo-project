@@ -1,11 +1,10 @@
 export class Contact {
   readonly id: string;
-  first_name: string;
-  last_name: string;
-  main_email: string;
-  main_phone: string;
+  name: string;
+  email: string;
+  phone: string;
   readonly created_at: string;
-  userId: string;
+  user_id: string;
 
   constructor() {}
 }
